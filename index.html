@@ -131,10 +131,12 @@
       }).then(function(engineInitializer) {
         return engineInitializer.initializeEngine();
       }).then(function(appRunner) {
-        var loadingIndicator = document.getElementById("loading");
+         setTimeout(function () {
+          var loadingIndicator = document.getElementById("loading_indicator");
           if (loadingIndicator) {
             loadingIndicator.remove();
           }
+        }, 2000);
         return appRunner.runApp();
       });
     });
