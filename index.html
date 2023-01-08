@@ -34,14 +34,13 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3877121751';
+    var serviceWorkerVersion = '1186358649';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
-
-  <div id="loading" class="loading">
+    <div id="loading" class="loading">
     <div class="loading-text">
       <span class="loading-text-words">L</span>
       <span class="loading-text-words">O</span>
@@ -120,7 +119,6 @@
 }
  
   </style>
-
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -131,12 +129,12 @@
       }).then(function(engineInitializer) {
         return engineInitializer.initializeEngine();
       }).then(function(appRunner) {
-         setTimeout(function () {
+        setTimeout(function () {
           var loadingIndicator = document.getElementById("loading");
           if (loadingIndicator) {
             loadingIndicator.remove();
           }
-        }, 2000);
+        }, 1000);
         return appRunner.runApp();
       });
     });

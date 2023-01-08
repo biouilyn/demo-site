@@ -8055,6 +8055,7 @@ aw7:function aw7(){},
 kM:function kM(a,b,c,d,e,f,g){var _=this
 _.ax=a
 _.ay=null
+_.ch=!1
 _.dh$=b
 _.fH$=c
 _.f8$=d
@@ -45868,10 +45869,11 @@ if(s!=null){s.x2$=$.aJ()
 s.x1$=0}this.ax.p()
 this.x3(0)}}
 A.aw8.prototype={
-$0(){var s=this.a.ax.a,r=s.a.a
-if(r<A.br(0,0,1).a)return
-s=s.b
-if(s.a===r)A.agR($.aQ(),"/get_started",t.z)},
+$0(){var s=this.a,r=s.ax.a,q=r.a.a
+if(q<A.br(0,0,1).a)return
+r=r.b
+if(r.a===q&&!s.ch){s.ch=!0
+A.agR($.aQ(),"/get_started",t.z)}},
 $S:0}
 A.xA.prototype={
 v(a){var s=null
